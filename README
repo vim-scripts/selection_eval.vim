@@ -1,0 +1,23 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=1428
+
+Evaluate the statements which you select with visual mode.
+
+Commands:
+vmap <c-e><c-r> evaluate with using ruby.
+vmap <c-e><c-l> evaluate with using perl.
+vmap <c-e><c-p> evaluate with using python.
+vmap <c-e><c-s> evaluate with using shell(bash)
+vmap <c-e><c-v> evaluate with using vim.
+
+you need to install the interpreter which you want to use.
+
+Usage: 
+1. press <ctrl> + v
+2. select the snippets with visual mode.  cf) echo "hello world"
+3. press <c-e><c-v> or :EV (evaluate by vim.)
+4. you get the result in the another buffer.
+5. when you press the <e-c>c or :ECL, the result buffer is closed.
+
+Reference: dbext.vim
+
+I use this scripts on FreeBSD5.4 and cygwin. (vim6.3)
